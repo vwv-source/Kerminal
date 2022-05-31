@@ -1,0 +1,59 @@
+*{
+    user-select: none;
+    cursor: none;
+}
+
+html,body{
+    font-family: 'VT323', monospace;
+    background-color: rgb(27, 18, 0);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color-scheme: dark;
+    box-shadow: inset black 0px 0px 5px,inset black 0px 0px 10px,inset black 0px 0px 15px,inset black 0px 0px 25px;
+}
+
+p{
+    color: orange;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: orange 0px 0px 3px,orange 0px 0px 10px;
+    display: inline;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    caret-color: transparent;
+}
+
+p::selection{
+    background: rgba(255, 145, 1, 0.534);
+}
+
+.inputarea{
+    animation: blink 1s step-end infinite;
+    border-right: 9px solid orange;
+    caret-color: transparent;
+}
+
+p:focus{
+    outline: none;
+}
+
+.ascii{
+    white-space: pre;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+@keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(255, 166, 0, 0.692);
+    }
+  }
