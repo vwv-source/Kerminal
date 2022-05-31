@@ -1,0 +1,3 @@
+function motd(container){
+    container.innerHTML += `<p class="ascii"> _  __                   _             _ <br>| |/ /___ _ __ _ __ ___ (_)_ __   __ _| |<br>| ' // _ \\ '__| '_ \` _ \\| | '_ \\ / _\` | |<br>| . \\  __/ |  | | | | | | | | | | (_| | |<br>|_|\\_\\___|_|  |_| |_| |_|_|_| |_|\\__,_|_| </p><br><br><br><p>--Repository: https://github.com/vwv-source/Kerminal<br>--Version: 0.1 Alpha<br>--Type "help" to get started!</p><br><br>`
+}
